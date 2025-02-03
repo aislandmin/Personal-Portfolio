@@ -6,6 +6,7 @@
 */
 
 import "./index.css";
+import serviceImage from "./assets/fullstack.webp";
 
 export default function Service() {
   return (
@@ -17,7 +18,7 @@ export default function Service() {
       {/* introducton of skills */}
       <div className="about-introduction">
         <div className="service-head-portrait">
-          <img src="../src/assets/fullstack.webp" alt="image of Xiaomin Guo" />
+          <img src={serviceImage} alt="full stack image" />
         </div>
         <p className="about-introPara">
           I have 10+ years of professional experience as a Software Engineer,
@@ -53,7 +54,6 @@ export default function Service() {
           </li>
         </ul>
       </section>
-      ; */
     </div>
   );
 }

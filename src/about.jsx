@@ -6,6 +6,8 @@
 */
 import { Link } from "react-router-dom";
 import "./index.css";
+import mePicture from "./assets/xiaomin.jpg";
+import myResume from "./assets/resume.pdf";
 
 export default function About() {
   return (
@@ -17,7 +19,7 @@ export default function About() {
       <div className="about-introduction">
         {/* picture section */}
         <div className="about-head-portrait">
-          <img src="../src/assets/xiaomin.jpg" alt="image of Xiaomin Guo" />
+          <img src={mePicture} alt="image of Xiaomin Guo" />
         </div>
         {/* self introduction section */}
         <p className="about-introPara">
@@ -35,7 +37,7 @@ export default function About() {
           <button>Contact me</button>
         </Link>
         <a
-          href="../src/assets/resume.pdf"
+          href={myResume}
           target="_blank"
           rel="noopener noreferrer"
           className="resume-link"

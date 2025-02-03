@@ -6,6 +6,9 @@
 */
 
 import "../src/index.css";
+import project1 from "./assets/project1.jpg";
+import project2 from "./assets/project2.jpg";
+import project3 from "./assets/project3.jpg";
 
 export default function Project() {
   return (
@@ -16,7 +19,7 @@ export default function Project() {
       <div className="about-introduction">
         {/* project 1 */}
         <div className="project-head-portrait">
-          <img src="../src/assets/project1.jpg" alt="Project 1" />
+          <img src={project1} alt="Project 1" />
         </div>
         <p className="about-introPara">
           Project 1 - Automated Molecular Diagnostics
@@ -30,7 +33,7 @@ export default function Project() {
       {/* project 2 */}
       <div className="about-introduction">
         <div className="project-head-portrait">
-          <img src="../src/assets/project2.jpg" alt="Project 2" />
+          <img src={project2} alt="Project 2" />
         </div>
         <p className="about-introPara">
           Project 2 - GPRS PDP management and configuration
@@ -44,7 +47,7 @@ export default function Project() {
       {/* project 3 */}
       <div className="about-introduction">
         <div className="project-head-portrait">
-          <img src="../src/assets/project3.jpg" alt="Project 3" />
+          <img src={project3} alt="Project 3" />
         </div>
         <p className="about-introPara">
           Project 3 - Business Operation Support System (BOSS)
